@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  gap: 1px;
+  border: 1px solid #000;
+}
+
+.cell {
+  width: calc(100% / 16);
+  height: calc(100% / 16);
+  background-color: white;
+}
+
+.cell:hover {
+  background-color: black;
+}
